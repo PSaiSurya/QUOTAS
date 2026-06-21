@@ -260,9 +260,17 @@
             color: var(--t2);
         }
 
-        .m-val.ok { color: var(--ok); }
-        .m-val.warn { color: var(--amber); }
-        .m-val.bad { color: var(--red); }
+        .m-val.ok {
+            color: var(--ok);
+        }
+
+        .m-val.warn {
+            color: var(--amber);
+        }
+
+        .m-val.bad {
+            color: var(--red);
+        }
 
         .m-unit {
             font-size: 10px;
@@ -291,11 +299,29 @@
             flex-shrink: 0;
         }
 
-        .tdots { display: flex; gap: 5px; }
-        .tdot { width: 10px; height: 10px; border-radius: 50%; }
-        .tdot-r { background: #ef4444; }
-        .tdot-y { background: #f59e0b; }
-        .tdot-g { background: #22c55e; box-shadow: 0 0 5px rgba(34, 197, 94, 0.5); }
+        .tdots {
+            display: flex;
+            gap: 5px;
+        }
+
+        .tdot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .tdot-r {
+            background: #ef4444;
+        }
+
+        .tdot-y {
+            background: #f59e0b;
+        }
+
+        .tdot-g {
+            background: #22c55e;
+            box-shadow: 0 0 5px rgba(34, 197, 94, 0.5);
+        }
 
         .term-title {
             font-size: 10.5px;
@@ -314,8 +340,14 @@
             line-height: 1.7;
         }
 
-        .term-body::-webkit-scrollbar { width: 5px; }
-        .term-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+        .term-body::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .term-body::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
 
         .ll {
             display: flex;
@@ -323,7 +355,11 @@
             margin-bottom: 2px;
         }
 
-        .lts { color: var(--t3); flex-shrink: 0; font-size: 10.5px; }
+        .lts {
+            color: var(--t3);
+            flex-shrink: 0;
+            font-size: 10.5px;
+        }
 
         .ltag {
             flex-shrink: 0;
@@ -336,13 +372,40 @@
             margin-top: 2px;
         }
 
-        .ltag-init { background: rgba(59, 130, 246, 0.15); color: #93c5fd; }
-        .ltag-wan { background: rgba(139, 92, 246, 0.15); color: #c4b5fd; }
-        .ltag-ot { background: rgba(20, 184, 166, 0.15); color: #5eead4; }
-        .ltag-plc { background: rgba(16, 185, 129, 0.15); color: #34d399; }
-        .ltag-ok { background: rgba(34, 197, 94, 0.15); color: #4ade80; }
-        .ltag-warn { background: rgba(245, 158, 11, 0.15); color: #fcd34d; }
-        .ltag-crit { background: rgba(239, 68, 68, 0.15); color: #fca5a5; }
+        .ltag-init {
+            background: rgba(59, 130, 246, 0.15);
+            color: #93c5fd;
+        }
+
+        .ltag-wan {
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+        }
+
+        .ltag-ot {
+            background: rgba(20, 184, 166, 0.15);
+            color: #5eead4;
+        }
+
+        .ltag-plc {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+        }
+
+        .ltag-ok {
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+        }
+
+        .ltag-warn {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fcd34d;
+        }
+
+        .ltag-crit {
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+        }
 
         .log-empty {
             height: 100%;
@@ -387,13 +450,16 @@
                 flex-direction: column;
                 height: auto;
             }
+
             .arch-wrap {
                 min-height: 550px;
                 width: 100%;
             }
+
             .right-col {
                 width: 100%;
             }
+
             .metrics {
                 grid-template-columns: 1fr;
             }
@@ -478,100 +544,154 @@
 
                 <rect x="37.5" y="0" width="0.5" height="760" fill="#1a2d44" />
 
-                <text transform="translate(19,45) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800" fill="#60a5fa" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 5</text>
-                <text transform="translate(19,150) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800" fill="#93c5fd" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 4</text>
-                <text transform="translate(19,306) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800" fill="#c4b5fd" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 3.5</text>
-                <text transform="translate(19,448) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800" fill="#5eead4" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 3</text>
-                <text transform="translate(19,627) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800" fill="#6ee7b7" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 1/2</text>
+                <text transform="translate(19,45) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800"
+                    fill="#60a5fa" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 5</text>
+                <text transform="translate(19,150) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800"
+                    fill="#93c5fd" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 4</text>
+                <text transform="translate(19,306) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800"
+                    fill="#c4b5fd" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 3.5</text>
+                <text transform="translate(19,448) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800"
+                    fill="#5eead4" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 3</text>
+                <text transform="translate(19,627) rotate(-90)" text-anchor="middle" font-size="8" font-weight="800"
+                    fill="#6ee7b7" font-family="'JetBrains Mono',monospace" letter-spacing="1.5">LVL 1/2</text>
 
                 <line x1="38" y1="90" x2="720" y2="90" stroke="#1a2d44" stroke-width="1.5" stroke-dasharray="5 5" />
                 <line x1="38" y1="210" x2="720" y2="210" stroke="#1a2d44" stroke-width="1.5" stroke-dasharray="5 5" />
                 <line x1="38" y1="402" x2="720" y2="402" stroke="#1a2d44" stroke-width="1.5" stroke-dasharray="5 5" />
                 <line x1="38" y1="494" x2="720" y2="494" stroke="#1a2d44" stroke-width="1.5" stroke-dasharray="5 5" />
 
-                <text x="716" y="16" text-anchor="end" font-size="9" font-weight="700" fill="#3b82f6" fill-opacity="0.6" font-family="'JetBrains Mono',monospace">Enterprise Network</text>
-                <text x="716" y="107" text-anchor="end" font-size="9" font-weight="700" fill="#60a5fa" fill-opacity="0.6" font-family="'JetBrains Mono',monospace">IT / Corporate LAN · 192.168.10.0/24</text>
-                <text x="716" y="227" text-anchor="end" font-size="9" font-weight="700" fill="#8b5cf6" fill-opacity="0.6" font-family="'JetBrains Mono',monospace">Industrial DMZ / Untrusted WAN · 172.16.0.0/24</text>
-                <text x="716" y="419" text-anchor="end" font-size="9" font-weight="700" fill="#14b8a6" fill-opacity="0.6" font-family="'JetBrains Mono',monospace">Operations Support / MES</text>
-                <text x="716" y="511" text-anchor="end" font-size="9" font-weight="700" fill="#10b981" fill-opacity="0.6" font-family="'JetBrains Mono',monospace">Control &amp; Field Devices · 10.0.20.0/24</text>
+                <text x="716" y="16" text-anchor="end" font-size="9" font-weight="700" fill="#3b82f6" fill-opacity="0.6"
+                    font-family="'JetBrains Mono',monospace">Enterprise Network</text>
+                <text x="716" y="107" text-anchor="end" font-size="9" font-weight="700" fill="#60a5fa"
+                    fill-opacity="0.6" font-family="'JetBrains Mono',monospace">IT / Corporate LAN ·
+                    192.168.10.0/24</text>
+                <text x="716" y="227" text-anchor="end" font-size="9" font-weight="700" fill="#8b5cf6"
+                    fill-opacity="0.6" font-family="'JetBrains Mono',monospace">Industrial DMZ / Untrusted WAN ·
+                    172.16.0.0/24</text>
+                <text x="716" y="419" text-anchor="end" font-size="9" font-weight="700" fill="#14b8a6"
+                    fill-opacity="0.6" font-family="'JetBrains Mono',monospace">Operations Support / MES</text>
+                <text x="716" y="511" text-anchor="end" font-size="9" font-weight="700" fill="#10b981"
+                    fill-opacity="0.6" font-family="'JetBrains Mono',monospace">Control &amp; Field Devices ·
+                    10.0.20.0/24</text>
 
                 <!-- CONNECTION LINES -->
-                <line x1="379" y1="80" x2="379" y2="113" stroke="#1d3a60" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr-blue)" />
-                <line x1="340" y1="187" x2="175" y2="273" stroke="#243d58" stroke-width="2" marker-end="url(#arr-blue)" />
+                <line x1="379" y1="80" x2="379" y2="113" stroke="#1d3a60" stroke-width="1.5" stroke-dasharray="4 4"
+                    marker-end="url(#arr-blue)" />
+                <line x1="340" y1="187" x2="175" y2="273" stroke="#243d58" stroke-width="2"
+                    marker-end="url(#arr-blue)" />
                 <line x1="273" y1="306" x2="461" y2="306" stroke="#1a2d44" stroke-width="2.5" />
-                <line x1="273" y1="306" x2="461" y2="306" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="9 7" opacity="0.9" id="tunnel-line">
+                <line x1="273" y1="306" x2="461" y2="306" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="9 7"
+                    opacity="0.9" id="tunnel-line">
                     <animate attributeName="stroke-dashoffset" from="0" to="-32" dur="0.7s" repeatCount="indefinite" />
                 </line>
-                <line x1="532" y1="343" x2="462" y2="415" stroke="#243d58" stroke-width="2" marker-end="url(#arr-green)" />
-                <line x1="379" y1="472" x2="379" y2="555" stroke="#243d58" stroke-width="2" marker-end="url(#arr-green)" />
-                <line x1="389" y1="555" x2="389" y2="472" stroke="#10b981" stroke-width="1" stroke-dasharray="3 5" opacity="0.3" />
-                <line x1="541" y1="343" x2="470" y2="415" stroke="#10b981" stroke-width="1" stroke-dasharray="3 5" opacity="0.3" />
+                <line x1="532" y1="343" x2="462" y2="415" stroke="#243d58" stroke-width="2"
+                    marker-end="url(#arr-green)" />
+                <line x1="379" y1="472" x2="379" y2="555" stroke="#243d58" stroke-width="2"
+                    marker-end="url(#arr-green)" />
+                <line x1="389" y1="555" x2="389" y2="472" stroke="#10b981" stroke-width="1" stroke-dasharray="3 5"
+                    opacity="0.3" />
+                <line x1="541" y1="343" x2="470" y2="415" stroke="#10b981" stroke-width="1" stroke-dasharray="3 5"
+                    opacity="0.3" />
 
                 <!-- TUNNEL LABEL BADGE -->
-                <rect x="214" y="240" width="292" height="20" rx="4" fill="#120630" stroke="#4c1d95" stroke-width="0.75" />
-                <text x="360" y="254" text-anchor="middle" font-size="10" font-weight="700" fill="#c4b5fd" font-family="'JetBrains Mono',monospace" id="tunnel-label">OQS-OpenVPN · AES-GCM + CLASSICAL</text>
+                <rect x="214" y="240" width="292" height="20" rx="4" fill="#120630" stroke="#4c1d95"
+                    stroke-width="0.75" />
+                <text x="360" y="254" text-anchor="middle" font-size="10" font-weight="700" fill="#c4b5fd"
+                    font-family="'JetBrains Mono',monospace" id="tunnel-label">OQS-OpenVPN · AES-GCM + CLASSICAL</text>
 
                 <!-- NODES -->
-                <rect x="284" y="10" width="190" height="70" rx="8" fill="#0a1628" stroke="#1d3a6a" stroke-width="1.5" stroke-dasharray="5 3" />
+                <rect x="284" y="10" width="190" height="70" rx="8" fill="#0a1628" stroke="#1d3a6a" stroke-width="1.5"
+                    stroke-dasharray="5 3" />
                 <rect x="284" y="10" width="190" height="3" rx="8" fill="#3b82f6" fill-opacity="0.5" />
                 <circle cx="459" cy="22" r="3.5" fill="#f59e0b" fill-opacity="0.25" />
                 <circle cx="459" cy="22" r="2" fill="#fcd34d" />
-                <text x="379" y="35" text-anchor="middle" font-size="12" font-weight="700" fill="#bfdbfe" font-family="Inter,sans-serif">Enterprise SCADA Server</text>
-                <text x="379" y="51" text-anchor="middle" font-size="10" fill="#4b6480" font-family="'JetBrains Mono',monospace">historian.corp · 10.100.1.5</text>
-                <text x="379" y="66" text-anchor="middle" font-size="9.5" fill="#1d3a6a" font-family="'JetBrains Mono',monospace">PASSIVE MONITOR / READ-ONLY</text>
+                <text x="379" y="35" text-anchor="middle" font-size="12" font-weight="700" fill="#bfdbfe"
+                    font-family="Inter,sans-serif">Enterprise SCADA Server</text>
+                <text x="379" y="51" text-anchor="middle" font-size="10" fill="#4b6480"
+                    font-family="'JetBrains Mono',monospace">historian.corp · 10.100.1.5</text>
+                <text x="379" y="66" text-anchor="middle" font-size="9.5" fill="#1d3a6a"
+                    font-family="'JetBrains Mono',monospace">PASSIVE MONITOR / READ-ONLY</text>
 
-                <rect x="279" y="113" width="200" height="74" rx="8" fill="#061528" stroke="#3b82f6" stroke-width="1.5" id="node-hmi" />
+                <rect x="279" y="113" width="200" height="74" rx="8" fill="#061528" stroke="#3b82f6" stroke-width="1.5"
+                    id="node-hmi" />
                 <rect x="279" y="113" width="200" height="3" rx="8" fill="#3b82f6" />
                 <circle cx="464" cy="126" r="4" fill="#22c55e" fill-opacity="0.2" />
                 <circle cx="464" cy="126" r="2.5" fill="#4ade80" />
-                <text x="379" y="138" text-anchor="middle" font-size="13.5" font-weight="700" fill="#eff6ff" font-family="Inter,sans-serif">Corporate HMI</text>
-                <text x="379" y="155" text-anchor="middle" font-size="10.5" fill="#93c5fd" font-family="'JetBrains Mono',monospace">Python Telemetry Engine</text>
-                <text x="379" y="171" text-anchor="middle" font-size="9.5" fill="#2d4a72" font-family="'JetBrains Mono',monospace">hmi.corp.lan · 192.168.10.10</text>
+                <text x="379" y="138" text-anchor="middle" font-size="13.5" font-weight="700" fill="#eff6ff"
+                    font-family="Inter,sans-serif">Corporate HMI</text>
+                <text x="379" y="155" text-anchor="middle" font-size="10.5" fill="#93c5fd"
+                    font-family="'JetBrains Mono',monospace">Python Telemetry Engine</text>
+                <text x="379" y="171" text-anchor="middle" font-size="9.5" fill="#2d4a72"
+                    font-family="'JetBrains Mono',monospace">hmi.corp.lan · 192.168.10.10</text>
 
-                <rect x="58" y="269" width="200" height="74" rx="8" fill="#0d0820" stroke="#8b5cf6" stroke-width="1.5" id="node-corpvpn" />
+                <rect x="58" y="269" width="200" height="74" rx="8" fill="#0d0820" stroke="#8b5cf6" stroke-width="1.5"
+                    id="node-corpvpn" />
                 <rect x="58" y="269" width="200" height="3" rx="8" fill="#8b5cf6" />
                 <circle cx="243" cy="281" r="4" fill="#22c55e" fill-opacity="0.2" />
                 <circle cx="243" cy="281" r="2.5" fill="#4ade80" />
-                <text x="158" y="295" text-anchor="middle" font-size="13.5" font-weight="700" fill="#f5f3ff" font-family="Inter,sans-serif">Corporate VPN GW</text>
-                <text x="158" y="312" text-anchor="middle" font-size="10.5" fill="#c4b5fd" font-family="'JetBrains Mono',monospace">OQS-OpenVPN Provider</text>
-                <text x="158" y="328" text-anchor="middle" font-size="9.5" fill="#3b2673" font-family="'JetBrains Mono',monospace">vpn.corp.lan · 172.16.1.1</text>
+                <text x="158" y="295" text-anchor="middle" font-size="13.5" font-weight="700" fill="#f5f3ff"
+                    font-family="Inter,sans-serif">Corporate VPN GW</text>
+                <text x="158" y="312" text-anchor="middle" font-size="10.5" fill="#c4b5fd"
+                    font-family="'JetBrains Mono',monospace">OQS-OpenVPN Provider</text>
+                <text x="158" y="328" text-anchor="middle" font-size="9.5" fill="#3b2673"
+                    font-family="'JetBrains Mono',monospace">vpn.corp.lan · 172.16.0.20</text>
 
-                <rect x="462" y="269" width="200" height="74" rx="8" fill="#0d0820" stroke="#8b5cf6" stroke-width="1.5" id="node-plantvpn" />
+                <rect x="462" y="269" width="200" height="74" rx="8" fill="#0d0820" stroke="#8b5cf6" stroke-width="1.5"
+                    id="node-plantvpn" />
                 <rect x="462" y="269" width="200" height="3" rx="8" fill="#8b5cf6" />
                 <circle cx="647" cy="281" r="4" fill="#22c55e" fill-opacity="0.2" />
                 <circle cx="647" cy="281" r="2.5" fill="#4ade80" />
-                <text x="562" y="295" text-anchor="middle" font-size="13.5" font-weight="700" fill="#f5f3ff" font-family="Inter,sans-serif">Plant VPN Gateway</text>
-                <text x="562" y="312" text-anchor="middle" font-size="10.5" fill="#c4b5fd" font-family="'JetBrains Mono',monospace">Throttled Edge (OQS)</text>
-                <text x="562" y="328" text-anchor="middle" font-size="9.5" fill="#3b2673" font-family="'JetBrains Mono',monospace">vpn.plant.ot · 172.16.2.1</text>
+                <text x="562" y="295" text-anchor="middle" font-size="13.5" font-weight="700" fill="#f5f3ff"
+                    font-family="Inter,sans-serif">Plant VPN Gateway</text>
+                <text x="562" y="312" text-anchor="middle" font-size="10.5" fill="#c4b5fd"
+                    font-family="'JetBrains Mono',monospace">Throttled Edge (OQS)</text>
+                <text x="562" y="328" text-anchor="middle" font-size="9.5" fill="#3b2673"
+                    font-family="'JetBrains Mono',monospace">vpn.plant.ot · 172.16.0.10</text>
 
-                <rect x="279" y="414" width="200" height="58" rx="8" fill="#051510" stroke="#105e52" stroke-width="1.5" stroke-dasharray="5 3" />
+                <rect x="279" y="414" width="200" height="58" rx="8" fill="#051510" stroke="#105e52" stroke-width="1.5"
+                    stroke-dasharray="5 3" />
                 <rect x="279" y="414" width="200" height="3" rx="8" fill="#14b8a6" fill-opacity="0.4" />
                 <circle cx="464" cy="426" r="3.5" fill="#f59e0b" fill-opacity="0.25" />
                 <circle cx="464" cy="426" r="2" fill="#fcd34d" />
-                <text x="379" y="438" text-anchor="middle" font-size="12" font-weight="700" fill="#99f6e4" font-family="Inter,sans-serif">Operations Historian</text>
-                <text x="379" y="453" text-anchor="middle" font-size="10" fill="#3c7d73" font-family="'JetBrains Mono',monospace">OSIsoft PI / InfluxDB Relay</text>
-                <text x="379" y="466" text-anchor="middle" font-size="9.5" fill="#105e52" font-family="'JetBrains Mono',monospace">historian.ot · 10.0.20.100</text>
+                <text x="379" y="438" text-anchor="middle" font-size="12" font-weight="700" fill="#99f6e4"
+                    font-family="Inter,sans-serif">Operations Historian</text>
+                <text x="379" y="453" text-anchor="middle" font-size="10" fill="#3c7d73"
+                    font-family="'JetBrains Mono',monospace">OSIsoft PI / InfluxDB Relay</text>
+                <text x="379" y="466" text-anchor="middle" font-size="9.5" fill="#105e52"
+                    font-family="'JetBrains Mono',monospace">historian.ot · 10.0.20.100</text>
 
-                <rect x="279" y="556" width="200" height="74" rx="8" fill="#031410" stroke="#10b981" stroke-width="1.5" id="node-plc" />
+                <rect x="279" y="556" width="200" height="74" rx="8" fill="#031410" stroke="#10b981" stroke-width="1.5"
+                    id="node-plc" />
                 <rect x="279" y="556" width="200" height="3" rx="8" fill="#10b981" />
                 <circle cx="464" cy="568" r="4" fill="#22c55e" fill-opacity="0.2" />
                 <circle cx="464" cy="568" r="2.5" fill="#4ade80" />
-                <text x="379" y="583" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ecfdf5" font-family="Inter,sans-serif">Golden PLC</text>
-                <text x="379" y="600" text-anchor="middle" font-size="10.5" fill="#34d399" font-family="'JetBrains Mono',monospace">OpenPLC v4 (C++ Runtime)</text>
-                <text x="379" y="616" text-anchor="middle" font-size="9.5" fill="#065f46" font-family="'JetBrains Mono',monospace">plc.ot · 10.0.20.50</text>
+                <text x="379" y="583" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ecfdf5"
+                    font-family="Inter,sans-serif">Golden PLC</text>
+                <text x="379" y="600" text-anchor="middle" font-size="10.5" fill="#34d399"
+                    font-family="'JetBrains Mono',monospace">OpenPLC v4 (C++ Runtime)</text>
+                <text x="379" y="616" text-anchor="middle" font-size="9.5" fill="#065f46"
+                    font-family="'JetBrains Mono',monospace">plc.ot · 10.0.20.50</text>
 
                 <!-- FIELD DEVICES -->
-                <rect x="68" y="590" width="120" height="52" rx="6" fill="#031410" stroke="#065f46" stroke-width="1" stroke-dasharray="4 3" />
+                <rect x="68" y="590" width="120" height="52" rx="6" fill="#031410" stroke="#065f46" stroke-width="1"
+                    stroke-dasharray="4 3" />
                 <rect x="68" y="590" width="120" height="3" rx="6" fill="#10b981" fill-opacity="0.35" />
-                <text x="128" y="608" text-anchor="middle" font-size="11" font-weight="700" fill="#6ee7b7" font-family="Inter,sans-serif">Field RTU</text>
-                <text x="128" y="623" text-anchor="middle" font-size="9.5" fill="#065f46" font-family="'JetBrains Mono',monospace">10.0.20.51 · Modbus</text>
-                <text x="128" y="636" text-anchor="middle" font-size="9" fill="#044a35" font-family="'JetBrains Mono',monospace">0.1× CPU LIMIT</text>
+                <text x="128" y="608" text-anchor="middle" font-size="11" font-weight="700" fill="#6ee7b7"
+                    font-family="Inter,sans-serif">Field RTU</text>
+                <text x="128" y="623" text-anchor="middle" font-size="9.5" fill="#065f46"
+                    font-family="'JetBrains Mono',monospace">10.0.20.51 · Modbus</text>
+                <text x="128" y="636" text-anchor="middle" font-size="9" fill="#044a35"
+                    font-family="'JetBrains Mono',monospace">0.1× CPU LIMIT</text>
 
-                <rect x="532" y="590" width="120" height="52" rx="6" fill="#031410" stroke="#065f46" stroke-width="1" stroke-dasharray="4 3" />
+                <rect x="532" y="590" width="120" height="52" rx="6" fill="#031410" stroke="#065f46" stroke-width="1"
+                    stroke-dasharray="4 3" />
                 <rect x="532" y="590" width="120" height="3" rx="6" fill="#10b981" fill-opacity="0.35" />
-                <text x="592" y="608" text-anchor="middle" font-size="11" font-weight="700" fill="#6ee7b7" font-family="Inter,sans-serif">Sensor Array</text>
-                <text x="592" y="623" text-anchor="middle" font-size="9.5" fill="#065f46" font-family="'JetBrains Mono',monospace">10.0.20.60 · PROFINET</text>
-                <text x="592" y="636" text-anchor="middle" font-size="9" fill="#044a35" font-family="'JetBrains Mono',monospace">READ-ONLY / PASSIVE</text>
+                <text x="592" y="608" text-anchor="middle" font-size="11" font-weight="700" fill="#6ee7b7"
+                    font-family="Inter,sans-serif">Sensor Array</text>
+                <text x="592" y="623" text-anchor="middle" font-size="9.5" fill="#065f46"
+                    font-family="'JetBrains Mono',monospace">10.0.20.60 · PROFINET</text>
+                <text x="592" y="636" text-anchor="middle" font-size="9" fill="#044a35"
+                    font-family="'JetBrains Mono',monospace">READ-ONLY / PASSIVE</text>
 
                 <line x1="279" y1="616" x2="188" y2="616" stroke="#065f46" stroke-width="1" stroke-dasharray="3 4" />
                 <line x1="479" y1="616" x2="532" y2="616" stroke="#065f46" stroke-width="1" stroke-dasharray="3 4" />
@@ -623,11 +743,21 @@
 
             <!-- Legend -->
             <div class="legend">
-                <div class="leg-item"><div class="leg-dot" style="background:#3b82f6"></div>IT / Corporate</div>
-                <div class="leg-item"><div class="leg-dot" style="background:#8b5cf6"></div>DMZ / Tunnel</div>
-                <div class="leg-item"><div class="leg-dot" style="background:#14b8a6"></div>OT / Operations</div>
-                <div class="leg-item"><div class="leg-dot" style="background:#10b981"></div>Control / Field</div>
-                <div class="leg-item"><div class="leg-dot" style="background:#f59e0b"></div>Passive Monitor</div>
+                <div class="leg-item">
+                    <div class="leg-dot" style="background:#3b82f6"></div>IT / Corporate
+                </div>
+                <div class="leg-item">
+                    <div class="leg-dot" style="background:#8b5cf6"></div>DMZ / Tunnel
+                </div>
+                <div class="leg-item">
+                    <div class="leg-dot" style="background:#14b8a6"></div>OT / Operations
+                </div>
+                <div class="leg-item">
+                    <div class="leg-dot" style="background:#10b981"></div>Control / Field
+                </div>
+                <div class="leg-item">
+                    <div class="leg-dot" style="background:#f59e0b"></div>Passive Monitor
+                </div>
             </div>
 
         </div>
@@ -644,22 +774,22 @@
         // Sample fallback dataset used if data.js fetch fails (missing file)
         const FALLBACK_DATA = {
             "modbus": {
-                "micro_rtu": { "CLASSICAL_BASELINE": {rtt: 45.3, jit: 35.1, ovh: 0}, "NIST_LVL1_ML": {rtt: 60.1, jit: 40.2, ovh: 14.8}, "NIST_LVL3_ML": {rtt: 67.4, jit: 42.5, ovh: 22.1}, "NIST_LVL5_ML": {rtt: 72.8, jit: 45.0, ovh: 27.5}, "NIST_LVL1_FALCON": {rtt: 54.2, jit: 38.6, ovh: 8.9}, "NIST_LVL5_FALCON": {rtt: 59.8, jit: 40.1, ovh: 14.5} },
-                "legacy_rtu": { "CLASSICAL_BASELINE": {rtt: 1.8, jit: 0.3, ovh: 0}, "NIST_LVL1_ML": {rtt: 1.81, jit: 0.31, ovh: 0.01}, "NIST_LVL3_ML": {rtt: 2.1, jit: 0.4, ovh: 0.3}, "NIST_LVL5_ML": {rtt: 2.08, jit: 0.4, ovh: 0.28}, "NIST_LVL1_FALCON": {rtt: 2.04, jit: 0.35, ovh: 0.24}, "NIST_LVL5_FALCON": {rtt: 2.05, jit: 0.35, ovh: 0.25} },
-                "mid_tier_plc": { "CLASSICAL_BASELINE": {rtt: 1.6, jit: 0.2, ovh: 0}, "NIST_LVL1_ML": {rtt: 1.15, jit: 0.2, ovh: -0.45}, "NIST_LVL3_ML": {rtt: 1.99, jit: 0.25, ovh: 0.39}, "NIST_LVL5_ML": {rtt: 2.07, jit: 0.25, ovh: 0.47}, "NIST_LVL1_FALCON": {rtt: 2.06, jit: 0.25, ovh: 0.46}, "NIST_LVL5_FALCON": {rtt: 2.03, jit: 0.25, ovh: 0.43} },
-                "high_end_plc": { "CLASSICAL_BASELINE": {rtt: 1.8, jit: 0.2, ovh: 0}, "NIST_LVL1_ML": {rtt: 1.72, jit: 0.2, ovh: -0.08}, "NIST_LVL3_ML": {rtt: 2.07, jit: 0.2, ovh: 0.27}, "NIST_LVL5_ML": {rtt: 2.11, jit: 0.2, ovh: 0.31}, "NIST_LVL1_FALCON": {rtt: 2.06, jit: 0.2, ovh: 0.26}, "NIST_LVL5_FALCON": {rtt: 2.02, jit: 0.2, ovh: 0.22} }
+                "micro_rtu": { "CLASSICAL_BASELINE": { rtt: 45.3, jit: 35.1, ovh: 0 }, "NIST_LVL1_ML": { rtt: 60.1, jit: 40.2, ovh: 14.8 }, "NIST_LVL3_ML": { rtt: 67.4, jit: 42.5, ovh: 22.1 }, "NIST_LVL5_ML": { rtt: 72.8, jit: 45.0, ovh: 27.5 }, "NIST_LVL1_FALCON": { rtt: 54.2, jit: 38.6, ovh: 8.9 }, "NIST_LVL5_FALCON": { rtt: 59.8, jit: 40.1, ovh: 14.5 } },
+                "legacy_rtu": { "CLASSICAL_BASELINE": { rtt: 1.8, jit: 0.3, ovh: 0 }, "NIST_LVL1_ML": { rtt: 1.81, jit: 0.31, ovh: 0.01 }, "NIST_LVL3_ML": { rtt: 2.1, jit: 0.4, ovh: 0.3 }, "NIST_LVL5_ML": { rtt: 2.08, jit: 0.4, ovh: 0.28 }, "NIST_LVL1_FALCON": { rtt: 2.04, jit: 0.35, ovh: 0.24 }, "NIST_LVL5_FALCON": { rtt: 2.05, jit: 0.35, ovh: 0.25 } },
+                "mid_tier_plc": { "CLASSICAL_BASELINE": { rtt: 1.6, jit: 0.2, ovh: 0 }, "NIST_LVL1_ML": { rtt: 1.15, jit: 0.2, ovh: -0.45 }, "NIST_LVL3_ML": { rtt: 1.99, jit: 0.25, ovh: 0.39 }, "NIST_LVL5_ML": { rtt: 2.07, jit: 0.25, ovh: 0.47 }, "NIST_LVL1_FALCON": { rtt: 2.06, jit: 0.25, ovh: 0.46 }, "NIST_LVL5_FALCON": { rtt: 2.03, jit: 0.25, ovh: 0.43 } },
+                "high_end_plc": { "CLASSICAL_BASELINE": { rtt: 1.8, jit: 0.2, ovh: 0 }, "NIST_LVL1_ML": { rtt: 1.72, jit: 0.2, ovh: -0.08 }, "NIST_LVL3_ML": { rtt: 2.07, jit: 0.2, ovh: 0.27 }, "NIST_LVL5_ML": { rtt: 2.11, jit: 0.2, ovh: 0.31 }, "NIST_LVL1_FALCON": { rtt: 2.06, jit: 0.2, ovh: 0.26 }, "NIST_LVL5_FALCON": { rtt: 2.02, jit: 0.2, ovh: 0.22 } }
             },
             "s7": {
-                "micro_rtu": { "CLASSICAL_BASELINE": {rtt: 11.2, jit: 6.1, ovh: 0}, "NIST_LVL1_ML": {rtt: 10.3, jit: 5.2, ovh: -0.9}, "NIST_LVL3_ML": {rtt: 12.1, jit: 5.5, ovh: 0.9}, "NIST_LVL5_ML": {rtt: 16.5, jit: 6.5, ovh: 5.3}, "NIST_LVL1_FALCON": {rtt: 1.5, jit: 1.0, ovh: -9.7}, "NIST_LVL5_FALCON": {rtt: 14.8, jit: 6.0, ovh: 3.6} },
-                "legacy_rtu": { "CLASSICAL_BASELINE": {rtt: 1.03, jit: 0.1, ovh: 0}, "NIST_LVL1_ML": {rtt: 1.15, jit: 0.1, ovh: 0.12}, "NIST_LVL3_ML": {rtt: 1.25, jit: 0.12, ovh: 0.22}, "NIST_LVL5_ML": {rtt: 1.25, jit: 0.12, ovh: 0.22}, "NIST_LVL1_FALCON": {rtt: 1.26, jit: 0.12, ovh: 0.23}, "NIST_LVL5_FALCON": {rtt: 1.21, jit: 0.12, ovh: 0.18} },
-                "mid_tier_plc": { "CLASSICAL_BASELINE": {rtt: 0.66, jit: 0.1, ovh: 0}, "NIST_LVL1_ML": {rtt: 0.86, jit: 0.1, ovh: 0.2}, "NIST_LVL3_ML": {rtt: 1.24, jit: 0.1, ovh: 0.58}, "NIST_LVL5_ML": {rtt: 1.26, jit: 0.1, ovh: 0.6}, "NIST_LVL1_FALCON": {rtt: 1.30, jit: 0.1, ovh: 0.64}, "NIST_LVL5_FALCON": {rtt: 1.24, jit: 0.1, ovh: 0.58} },
-                "high_end_plc": { "CLASSICAL_BASELINE": {rtt: 1.13, jit: 0.1, ovh: 0}, "NIST_LVL1_ML": {rtt: 1.09, jit: 0.1, ovh: -0.04}, "NIST_LVL3_ML": {rtt: 1.23, jit: 0.1, ovh: 0.1}, "NIST_LVL5_ML": {rtt: 1.25, jit: 0.1, ovh: 0.12}, "NIST_LVL1_FALCON": {rtt: 1.29, jit: 0.1, ovh: 0.16}, "NIST_LVL5_FALCON": {rtt: 1.24, jit: 0.1, ovh: 0.11} }
+                "micro_rtu": { "CLASSICAL_BASELINE": { rtt: 11.2, jit: 6.1, ovh: 0 }, "NIST_LVL1_ML": { rtt: 10.3, jit: 5.2, ovh: -0.9 }, "NIST_LVL3_ML": { rtt: 12.1, jit: 5.5, ovh: 0.9 }, "NIST_LVL5_ML": { rtt: 16.5, jit: 6.5, ovh: 5.3 }, "NIST_LVL1_FALCON": { rtt: 1.5, jit: 1.0, ovh: -9.7 }, "NIST_LVL5_FALCON": { rtt: 14.8, jit: 6.0, ovh: 3.6 } },
+                "legacy_rtu": { "CLASSICAL_BASELINE": { rtt: 1.03, jit: 0.1, ovh: 0 }, "NIST_LVL1_ML": { rtt: 1.15, jit: 0.1, ovh: 0.12 }, "NIST_LVL3_ML": { rtt: 1.25, jit: 0.12, ovh: 0.22 }, "NIST_LVL5_ML": { rtt: 1.25, jit: 0.12, ovh: 0.22 }, "NIST_LVL1_FALCON": { rtt: 1.26, jit: 0.12, ovh: 0.23 }, "NIST_LVL5_FALCON": { rtt: 1.21, jit: 0.12, ovh: 0.18 } },
+                "mid_tier_plc": { "CLASSICAL_BASELINE": { rtt: 0.66, jit: 0.1, ovh: 0 }, "NIST_LVL1_ML": { rtt: 0.86, jit: 0.1, ovh: 0.2 }, "NIST_LVL3_ML": { rtt: 1.24, jit: 0.1, ovh: 0.58 }, "NIST_LVL5_ML": { rtt: 1.26, jit: 0.1, ovh: 0.6 }, "NIST_LVL1_FALCON": { rtt: 1.30, jit: 0.1, ovh: 0.64 }, "NIST_LVL5_FALCON": { rtt: 1.24, jit: 0.1, ovh: 0.58 } },
+                "high_end_plc": { "CLASSICAL_BASELINE": { rtt: 1.13, jit: 0.1, ovh: 0 }, "NIST_LVL1_ML": { rtt: 1.09, jit: 0.1, ovh: -0.04 }, "NIST_LVL3_ML": { rtt: 1.23, jit: 0.1, ovh: 0.1 }, "NIST_LVL5_ML": { rtt: 1.25, jit: 0.1, ovh: 0.12 }, "NIST_LVL1_FALCON": { rtt: 1.29, jit: 0.1, ovh: 0.16 }, "NIST_LVL5_FALCON": { rtt: 1.24, jit: 0.1, ovh: 0.11 } }
             },
             "opcua": {
-                "micro_rtu": { "CLASSICAL_BASELINE": {rtt: 14.5, jit: 12.1, ovh: 0}, "NIST_LVL1_ML": {rtt: 78.1, jit: 25.2, ovh: 63.6}, "NIST_LVL3_ML": {rtt: 103.2, jit: 28.5, ovh: 88.7}, "NIST_LVL5_ML": {rtt: 101.1, jit: 27.0, ovh: 86.6}, "NIST_LVL1_FALCON": {rtt: 5.1, jit: 2.1, ovh: -9.4}, "NIST_LVL5_FALCON": {rtt: 112.5, jit: 35.5, ovh: 98.0} },
-                "legacy_rtu": { "CLASSICAL_BASELINE": {rtt: 2.68, jit: 0.15, ovh: 0}, "NIST_LVL1_ML": {rtt: 2.3, jit: 0.15, ovh: -0.38}, "NIST_LVL3_ML": {rtt: 2.88, jit: 0.15, ovh: 0.2}, "NIST_LVL5_ML": {rtt: 2.9, jit: 0.15, ovh: 0.22}, "NIST_LVL1_FALCON": {rtt: 2.95, jit: 0.15, ovh: 0.27}, "NIST_LVL5_FALCON": {rtt: 2.96, jit: 0.15, ovh: 0.28} },
-                "mid_tier_plc": { "CLASSICAL_BASELINE": {rtt: 2.49, jit: 0.15, ovh: 0}, "NIST_LVL1_ML": {rtt: 2.24, jit: 0.15, ovh: -0.25}, "NIST_LVL3_ML": {rtt: 2.96, jit: 0.15, ovh: 0.47}, "NIST_LVL5_ML": {rtt: 2.93, jit: 0.15, ovh: 0.44}, "NIST_LVL1_FALCON": {rtt: 2.91, jit: 0.15, ovh: 0.42}, "NIST_LVL5_FALCON": {rtt: 2.92, jit: 0.15, ovh: 0.43} },
-                "high_end_plc": { "CLASSICAL_BASELINE": {rtt: 2.61, jit: 0.15, ovh: 0}, "NIST_LVL1_ML": {rtt: 2.05, jit: 0.15, ovh: -0.56}, "NIST_LVL3_ML": {rtt: 2.87, jit: 0.15, ovh: 0.26}, "NIST_LVL5_ML": {rtt: 2.76, jit: 0.15, ovh: 0.15}, "NIST_LVL1_FALCON": {rtt: 2.94, jit: 0.15, ovh: 0.33}, "NIST_LVL5_FALCON": {rtt: 2.87, jit: 0.15, ovh: 0.26} }
+                "micro_rtu": { "CLASSICAL_BASELINE": { rtt: 14.5, jit: 12.1, ovh: 0 }, "NIST_LVL1_ML": { rtt: 78.1, jit: 25.2, ovh: 63.6 }, "NIST_LVL3_ML": { rtt: 103.2, jit: 28.5, ovh: 88.7 }, "NIST_LVL5_ML": { rtt: 101.1, jit: 27.0, ovh: 86.6 }, "NIST_LVL1_FALCON": { rtt: 5.1, jit: 2.1, ovh: -9.4 }, "NIST_LVL5_FALCON": { rtt: 112.5, jit: 35.5, ovh: 98.0 } },
+                "legacy_rtu": { "CLASSICAL_BASELINE": { rtt: 2.68, jit: 0.15, ovh: 0 }, "NIST_LVL1_ML": { rtt: 2.3, jit: 0.15, ovh: -0.38 }, "NIST_LVL3_ML": { rtt: 2.88, jit: 0.15, ovh: 0.2 }, "NIST_LVL5_ML": { rtt: 2.9, jit: 0.15, ovh: 0.22 }, "NIST_LVL1_FALCON": { rtt: 2.95, jit: 0.15, ovh: 0.27 }, "NIST_LVL5_FALCON": { rtt: 2.96, jit: 0.15, ovh: 0.28 } },
+                "mid_tier_plc": { "CLASSICAL_BASELINE": { rtt: 2.49, jit: 0.15, ovh: 0 }, "NIST_LVL1_ML": { rtt: 2.24, jit: 0.15, ovh: -0.25 }, "NIST_LVL3_ML": { rtt: 2.96, jit: 0.15, ovh: 0.47 }, "NIST_LVL5_ML": { rtt: 2.93, jit: 0.15, ovh: 0.44 }, "NIST_LVL1_FALCON": { rtt: 2.91, jit: 0.15, ovh: 0.42 }, "NIST_LVL5_FALCON": { rtt: 2.92, jit: 0.15, ovh: 0.43 } },
+                "high_end_plc": { "CLASSICAL_BASELINE": { rtt: 2.61, jit: 0.15, ovh: 0 }, "NIST_LVL1_ML": { rtt: 2.05, jit: 0.15, ovh: -0.56 }, "NIST_LVL3_ML": { rtt: 2.87, jit: 0.15, ovh: 0.26 }, "NIST_LVL5_ML": { rtt: 2.76, jit: 0.15, ovh: 0.15 }, "NIST_LVL1_FALCON": { rtt: 2.94, jit: 0.15, ovh: 0.33 }, "NIST_LVL5_FALCON": { rtt: 2.87, jit: 0.15, ovh: 0.26 } }
             }
         };
 
@@ -737,42 +867,42 @@
                 if (typeof RAW_CSV_DATA === 'undefined') {
                     throw new Error("data.js not found or RAW_CSV_DATA is missing.");
                 }
-                
+
                 const lines = RAW_CSV_DATA.split('\n').filter(l => l.trim().length > 0);
                 const raw = {};
-                
-                for(let i=1; i<lines.length; i++) {
+
+                for (let i = 1; i < lines.length; i++) {
                     const cols = lines[i].split(',');
-                    if(cols.length < 8) continue;
+                    if (cols.length < 8) continue;
                     const crypto = cols[0];
                     const hw = cols[3];
                     const proto = cols[4];
                     const status = cols[6];
                     const latency = parseFloat(cols[7]);
-                    
-                    if(status !== 'SUCCESS') continue; 
-                    
-                    if(!raw[proto]) raw[proto] = {};
-                    if(!raw[proto][hw]) raw[proto][hw] = {};
-                    if(!raw[proto][hw][crypto]) raw[proto][hw][crypto] = [];
+
+                    if (status !== 'SUCCESS') continue;
+
+                    if (!raw[proto]) raw[proto] = {};
+                    if (!raw[proto][hw]) raw[proto][hw] = {};
+                    if (!raw[proto][hw][crypto]) raw[proto][hw][crypto] = [];
                     raw[proto][hw][crypto].push(latency);
                 }
-                
-                for(const p in raw) {
+
+                for (const p in raw) {
                     aggregatedData[p] = {};
-                    for(const h in raw[p]) {
+                    for (const h in raw[p]) {
                         aggregatedData[p][h] = {};
                         let baseMean = 0;
-                        if(raw[p][h]['CLASSICAL_BASELINE']) {
-                            baseMean = raw[p][h]['CLASSICAL_BASELINE'].reduce((a,b)=>a+b,0)/raw[p][h]['CLASSICAL_BASELINE'].length;
+                        if (raw[p][h]['CLASSICAL_BASELINE']) {
+                            baseMean = raw[p][h]['CLASSICAL_BASELINE'].reduce((a, b) => a + b, 0) / raw[p][h]['CLASSICAL_BASELINE'].length;
                         }
-                        for(const c in raw[p][h]) {
+                        for (const c in raw[p][h]) {
                             const arr = raw[p][h][c];
-                            const mean = arr.reduce((a,b)=>a+b,0)/arr.length;
-                            const variance = arr.reduce((a,b)=>a+Math.pow(b-mean,2),0)/arr.length;
+                            const mean = arr.reduce((a, b) => a + b, 0) / arr.length;
+                            const variance = arr.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / arr.length;
                             const std = Math.sqrt(variance);
                             let ovh = mean - baseMean;
-                            if(c === 'CLASSICAL_BASELINE') ovh = 0;
+                            if (c === 'CLASSICAL_BASELINE') ovh = 0;
                             aggregatedData[p][h][c] = { rtt: mean, jit: std, ovh: ovh };
                         }
                     }
@@ -780,7 +910,7 @@
                 term.innerHTML = '';
                 log('SYS', 'ltag-ok', `Successfully parsed data.js. Engine ready.`);
                 btn.disabled = false;
-            } catch(e) {
+            } catch (e) {
                 term.innerHTML = '';
                 log('SYS', 'ltag-warn', `Failed to load data.js (File Not Found)`);
                 log('SYS', 'ltag-warn', `WARNING: Using basic fallback data. This data may not represent your latest CSV results.`);
@@ -804,7 +934,7 @@
             const crypto = cryptoMap[rawCrypto] || rawCrypto;
             const hw = hwMap[rawHw] || rawHw;
 
-            if(!aggregatedData[proto] || !aggregatedData[proto][hw] || !aggregatedData[proto][hw][crypto]) {
+            if (!aggregatedData[proto] || !aggregatedData[proto][hw] || !aggregatedData[proto][hw][crypto]) {
                 log('SYS', 'ltag-crit', `CRITICAL: No benchmark data found for combination: ${rawProto} + ${rawHw} + ${rawCrypto}`);
                 btn.disabled = false;
                 return;
@@ -894,7 +1024,7 @@
         // Initialize view
         window.addEventListener('DOMContentLoaded', () => {
             updateLabel();
-            btn.disabled = true; 
+            btn.disabled = true;
             initData();
         });
     </script>
