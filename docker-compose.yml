@@ -1,0 +1,84 @@
+networks:
+  corporate_lan:
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
+  plant_lan:
+    ipam:
+      config:
+        - subnet: 10.0.20.0/24
+  transit_wan:
+    ipam:
+      config:
+        - subnet: 172.16.0.0/24
+
+services:
+  plant-plc:
+    image: golden-plc
+    container_name: plant-plc
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+      - SYS_NICE
+      - SYS_RESOURCE
+    deploy:
+      resources:
+        limits:
+          cpus: '${PLC_CPU_LIMIT:-1.0}'
+    environment:
+      - S7_BIND_ADDRESS=0.0.0.0
+      - OPCUA_BIND_ADDRESS=0.0.0.0
+      - OPCUA_ENDPOINT_URL=opc.tcp://10.0.20.50:4840/openplc/opcua
+    networks:
+      plant_lan:
+        ipv4_address: 10.0.20.50
+
+  plant-vpn-gateway:
+    image: custom-vpn
+    container_name: plant-vpn-gateway
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun:/dev/net/tun"
+    volumes:
+      - ./config/openvpn-server.conf:/etc/openvpn/openvpn.conf:ro
+      - ./certs:/etc/openvpn/certs:ro
+    command: openvpn /etc/openvpn/openvpn.conf
+    deploy:
+      resources:
+        limits:
+          cpus: '${PLC_CPU_LIMIT:-1.0}'
+    networks:
+      transit_wan:
+        ipv4_address: 172.16.0.10
+      plant_lan:
+        ipv4_address: 10.0.20.10
+        
+  corp-vpn-gateway:
+    image: custom-vpn
+    container_name: corp-vpn-gateway
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun:/dev/net/tun"
+    volumes:
+      - ./config/openvpn-client.conf:/etc/openvpn/openvpn.conf:ro
+      - ./certs:/etc/openvpn/certs:ro
+    command: openvpn /etc/openvpn/openvpn.conf
+    networks:
+      transit_wan:
+        ipv4_address: 172.16.0.20
+      corporate_lan:
+        ipv4_address: 192.168.10.10
+
+  corporate-hmi:
+    image: custom-hmi
+    container_name: corporate-hmi
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./hmi:/app
+    command: tail -f /dev/null
+    networks:
+      corporate_lan:
+        ipv4_address: 192.168.10.50

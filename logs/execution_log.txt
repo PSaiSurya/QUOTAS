@@ -1,0 +1,962 @@
+
+===========================================================================
+ 🔐 SUITE: CLASSICAL_BASELINE | SIG: RSA:3072 | KEM: X25519
+===========================================================================
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MICRO_RTU (0.01 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency= 92.11ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency= 21.56ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 24.46ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.05ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 13.53ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  6.84ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 55.61ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 65.92ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 75.66ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 99.53ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency= 18.84ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency= 15.81ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 14.77ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 11.76ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 16.76ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  5.23ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 10.11ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 12.87ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  4.54ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.11ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency= 12.47ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  4.43ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 13.54ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  5.23ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  4.55ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  4.74ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.79ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  4.86ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 22.42ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 71.52ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: LEGACY_RTU (0.1 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.35ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.45ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.39ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.87ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.80ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.92ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.81ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.86ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.74ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.84ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.15ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.13ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.12ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  0.75ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  0.90ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  0.40ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.41ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.79ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.80ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.71ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.78ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.73ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.74ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.60ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.83ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.47ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MID_TIER_PLC (0.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.37ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.95ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.92ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.81ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.00ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.75ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.53ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  0.89ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  0.84ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  0.98ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  0.80ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  0.65ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  0.58ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  0.62ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  0.60ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  0.65ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  0.75ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  0.67ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  0.63ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  0.65ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.64ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.92ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.76ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.53ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.65ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.75ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.57ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.81ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.70ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.61ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: HIGH_END_PLC (1.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.30ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.88ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.97ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.19ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.74ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.66ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.04ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.84ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.79ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.72ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.18ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.09ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.12ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.14ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.11ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.23ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.05ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.10ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.17ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via CLASSICAL_BASELINE)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.65ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.82ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.54ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.53ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.82ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.36ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.82ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.24ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.47ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.87ms | Packets=100
+
+===========================================================================
+ 🔐 SUITE: NIST_LVL1_ML | SIG: MLDSA44 | KEM: MLKEM512
+===========================================================================
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MICRO_RTU (0.01 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency= 39.67ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=173.78ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 43.84ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 41.67ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 51.78ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 43.44ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 51.72ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 42.88ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 65.67ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 47.70ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.41ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  7.48ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  8.93ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 10.75ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 12.91ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 15.99ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 13.81ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 15.77ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  7.83ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  6.13ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency= 85.24ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency= 78.26ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=101.21ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 44.39ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 73.38ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 97.28ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 97.23ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 94.24ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 76.24ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 33.20ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: LEGACY_RTU (0.1 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.22ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.97ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.72ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.47ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.35ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.73ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.99ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.90ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.96ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.82ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.18ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.18ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.14ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.07ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.02ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.12ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.23ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.16ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.55ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.78ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.82ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.65ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  3.08ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.65ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.26ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.46ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.38ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.40ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MID_TIER_PLC (0.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.56ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.17ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.14ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  0.99ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.13ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.13ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.02ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.07ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.03ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  0.60ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  0.65ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  0.76ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  0.78ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  0.77ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  0.78ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.05ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.10ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  0.96ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.74ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.43ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.41ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.51ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.73ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.19ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.11ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.71ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.78ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.84ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: HIGH_END_PLC (1.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.60ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.16ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.71ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.74ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.74ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.63ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.95ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.90ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.93ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.90ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.10ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.29ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.15ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.14ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.16ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.11ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.04ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.10ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  0.67ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL1_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.54ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.69ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.61ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.56ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.28ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.59ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.81ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.37ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.33ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.74ms | Packets=100
+
+===========================================================================
+ 🔐 SUITE: NIST_LVL3_ML | SIG: MLDSA65 | KEM: MLKEM768
+===========================================================================
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MICRO_RTU (0.01 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency= 55.63ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=177.71ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 61.66ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 55.79ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 51.68ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 53.76ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 56.79ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 53.95ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 55.85ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 53.90ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  9.56ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency= 10.87ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 19.79ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 19.75ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 12.78ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 13.86ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 13.95ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 12.55ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  4.02ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  6.82ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency= 78.33ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=114.30ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 99.04ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=104.31ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=119.26ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=119.32ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=115.28ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 95.30ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=122.27ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 67.34ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: LEGACY_RTU (0.1 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.85ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.03ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.88ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.12ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.09ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.95ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.10ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.09ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.35ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.26ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.28ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.19ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.34ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.29ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.22ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  3.20ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.88ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.69ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  3.13ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  3.03ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.77ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.94ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.81ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  3.19ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.21ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MID_TIER_PLC (0.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.67ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.98ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.12ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.94ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.08ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.96ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.10ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.35ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.22ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.31ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.99ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  3.15ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.85ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.93ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.78ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.94ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  3.06ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  3.13ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.78ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  3.06ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: HIGH_END_PLC (1.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.60ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.03ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.00ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.99ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.14ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.05ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.06ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.02ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.86ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.15ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.35ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.14ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.26ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.29ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.23ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL3_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  3.15ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.70ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  3.02ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.68ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  3.13ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.86ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  3.05ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.77ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.49ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.97ms | Packets=100
+
+===========================================================================
+ 🔐 SUITE: NIST_LVL5_ML | SIG: MLDSA87 | KEM: MLKEM1024
+===========================================================================
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MICRO_RTU (0.01 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency= 67.40ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=190.84ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 55.94ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 71.71ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 52.76ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 59.77ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 40.77ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 51.71ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 80.86ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 56.60ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency= 16.86ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency= 17.49ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 15.55ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 16.81ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 18.84ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 15.90ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 16.76ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 20.75ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 14.78ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 14.89ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=103.28ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=102.25ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 98.32ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=106.34ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 97.29ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 95.24ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=102.27ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=100.22ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=103.29ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=104.19ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: LEGACY_RTU (0.1 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.41ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.86ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.11ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.12ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.17ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.05ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.13ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.98ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.08ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.97ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.23ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.23ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.22ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.28ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.32ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  3.08ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.88ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.75ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.99ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.68ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.74ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  3.19ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.81ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.84ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  3.05ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MID_TIER_PLC (0.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.46ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.94ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.99ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.11ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.02ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.90ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.09ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.06ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.14ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.32ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.22ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.32ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.23ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.28ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.30ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.84ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.82ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  3.20ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.81ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  3.01ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.80ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.73ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  3.22ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.81ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  3.06ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: HIGH_END_PLC (1.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.62ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.97ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.99ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.12ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.96ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.15ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.23ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.09ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.09ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.96ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.32ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.31ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL5_ML)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.58ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.57ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.98ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.88ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  3.00ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.67ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.78ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.88ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.48ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.92ms | Packets=100
+
+===========================================================================
+ 🔐 SUITE: NIST_LVL1_FALCON | SIG: FALCON512 | KEM: MLKEM512
+===========================================================================
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MICRO_RTU (0.01 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency= 35.24ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=162.75ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency= 47.71ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 59.77ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 56.47ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 61.84ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 55.61ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 35.54ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 25.23ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  3.77ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.16ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.70ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  0.59ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  0.62ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  3.03ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.91ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.57ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.70ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.13ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.45ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  7.55ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  5.17ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  4.75ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  9.99ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  4.58ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  3.15ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  4.82ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.31ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.60ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  6.52ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: LEGACY_RTU (0.1 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.94ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.02ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.09ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.99ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.06ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.03ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.00ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.13ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.31ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.32ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.29ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.26ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.16ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.26ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.30ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.36ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.18ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  3.13ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  3.12ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.82ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.91ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.80ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  3.24ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.72ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  3.11ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  3.05ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.57ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MID_TIER_PLC (0.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.53ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.99ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.98ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.06ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.14ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.92ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.10ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.86ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.31ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.29ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.31ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.34ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.35ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.34ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.31ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  3.10ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.66ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  3.09ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.98ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.98ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.69ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.68ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  3.14ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.92ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.89ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: HIGH_END_PLC (1.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.43ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.21ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.00ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.00ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.16ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.01ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.89ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.93ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.94ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.28ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.32ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.37ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.29ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.30ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.31ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.14ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.35ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.33ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL1_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  3.06ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  3.00ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.88ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  3.04ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.89ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.85ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.80ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  3.14ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  3.16ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.68ms | Packets=100
+
+===========================================================================
+ 🔐 SUITE: NIST_LVL5_FALCON | SIG: FALCON1024 | KEM: MLKEM1024
+===========================================================================
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MICRO_RTU (0.01 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency= 74.90ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.43ms | Packets=1
+          -> Run 03/10: Status=SUCCESS | Latency= 60.47ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 68.73ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 65.59ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency= 68.59ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 71.83ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 57.60ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 61.52ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 67.63ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency= 24.77ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency= 15.81ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  6.08ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency= 13.74ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency= 12.69ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  8.94ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency= 15.58ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency= 17.86ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency= 14.36ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 18.78ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency= 95.21ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=110.22ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=126.25ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=117.25ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=105.22ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=121.18ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=110.19ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=123.19ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=116.18ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency= 96.28ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: LEGACY_RTU (0.1 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.50ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.03ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.12ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.85ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.82ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.02ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.99ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.19ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.22ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.19ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.22ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.23ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  3.09ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.92ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.70ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  3.01ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.95ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.78ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  3.22ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  3.07ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.81ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  3.01ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: MID_TIER_PLC (0.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.27ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.99ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.92ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.08ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.02ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.04ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.93ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.02ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.02ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.28ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.28ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.26ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.23ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.21ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.22ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.25ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.83ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.93ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  3.06ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.93ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.85ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  3.15ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.84ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.78ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  3.06ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.74ms | Packets=100
+
+  [+] 🏗️  Booting Infrastructure unconstrained for initialization...
+      [~] Handshake complete. Applying DYNAMIC THROTTLE: HIGH_END_PLC (1.5 CPU)...
+
+      [*] 📡 PROTOCOL: MODBUS (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  2.44ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.02ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.95ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  2.09ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  2.07ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.93ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.93ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.97ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.97ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.93ms | Packets=100
+
+      [*] 📡 PROTOCOL: S7 (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  1.26ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  1.29ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  1.20ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  1.29ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  1.27ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  1.24ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  1.19ms | Packets=100
+
+      [*] 📡 PROTOCOL: OPCUA (via NIST_LVL5_FALCON)
+          -> Run 01/10: Status=SUCCESS | Latency=  3.12ms | Packets=100
+          -> Run 02/10: Status=SUCCESS | Latency=  2.95ms | Packets=100
+          -> Run 03/10: Status=SUCCESS | Latency=  2.65ms | Packets=100
+          -> Run 04/10: Status=SUCCESS | Latency=  3.19ms | Packets=100
+          -> Run 05/10: Status=SUCCESS | Latency=  3.04ms | Packets=100
+          -> Run 06/10: Status=SUCCESS | Latency=  2.72ms | Packets=100
+          -> Run 07/10: Status=SUCCESS | Latency=  2.80ms | Packets=100
+          -> Run 08/10: Status=SUCCESS | Latency=  2.99ms | Packets=100
+          -> Run 09/10: Status=SUCCESS | Latency=  2.61ms | Packets=100
+          -> Run 10/10: Status=SUCCESS | Latency=  2.70ms | Packets=100
+
+[+] Massive Matrix Processing run finalized. Metrics recorded directly into 'nist_pqc_ot_benchmarks.csv'.
