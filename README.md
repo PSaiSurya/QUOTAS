@@ -1,11 +1,26 @@
-# QUOTAS (**QU**antum-safe **OT** **A**ssessment **S**andbox)
+# QUOTAS ⚙️🔐
 
-**QU**antum-safe **OT** **A**ssessment **S**andbox ⚙️🔐
+**QU**antum-safe **OT** **A**ssessment **S**andbox
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Docker](https://img.shields.io/badge/Docker-Engine-2496ED?logo=docker)
 ![NIST](https://img.shields.io/badge/Cryptography-FIPS_203%2F204%2F205-a371f7)
 ![OT](https://img.shields.io/badge/Architecture-Purdue_Model-10b981)
+
+## 📑 Table of Contents
+
+- [🌐 Live Interactive Dashboard](#-live-interactive-dashboard)
+- [📖 Overview](#-overview)
+- [🏗️ Why Test at the VPN Gateway Stage?](#%EF%B8%8F-why-test-at-the-vpn-gateway-stage)
+- [🔬 The 72,000-Point Experimental Matrix](#-the-72000-point-experimental-matrix)
+- [🔐 Detailed Cryptographic Suites](#-detailed-cryptographic-suites)
+- [🏭 OpenPLC v4 Runtime Architecture (Golden PLC)](#-openplc-v4-runtime-architecture-golden-plc)
+- [📊 Comprehensive Visual Results & Key Findings](#-comprehensive-visual-results--key-findings)
+- [📂 Directory Structure](#-directory-structure)
+- [🛠️ Reproduction & Setup](#️-reproduction--setup)
+- [🤝 Credits & Attributions](#-credits--attributions)
+
+---
 
 ## 🌐 Live Interactive Dashboard
 
@@ -135,35 +150,33 @@ _(Click on any graph to expand to full resolution)._
 
 | The Starvation Boundary                                                                                                                                                                                                                                                                                                                        | Tail Latency Predictability                                                                                                                                                                                                                                                                    |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <a href="graphs/4_cpu_scaling_boundary.png"><img src="graphs/4_cpu_scaling_boundary.png" width="100%" alt="Cryptographic Starvation Boundary"></a>                                                                                                                                                                                             | <a href="graphs/5_tail_latency_ecdf.png"><img src="graphs/5_tail_latency_ecdf.png" width="100%" alt="Tail Latency Predictability"></a>                                                                                                                                                         |
+| <a href="graphs/4_cpu_scaling_boundary.png"><img src="graphs/4_cpu_scaling_boundary.png" width="600" alt="Cryptographic Starvation Boundary"></a>                                                                                                                                                                                              | <a href="graphs/5_tail_latency_ecdf.png"><img src="graphs/5_tail_latency_ecdf.png" width="500" alt="Tail Latency Predictability"></a>                                                                                                                                                          |
 | **Plotting latency against available hardware power reveals a severe "Hockey Stick" curve.** At 1% CPU (Micro RTUs), Linux CFS context-switching induces erratic starvation jitter (>80ms). However, scaling hardware to just 10% CPU (Legacy RTUs) flattens the curve, providing enough headroom for a perfectly deterministic ~2ms baseline. | **The ECDF answers the critical industrial question: "What is the absolute maximum delay an actuator will experience 99% of the time?"** Once the 10% CPU starvation boundary is cleared, packet delivery under PQC remains tightly clustered, satisfying strict ICS determinism requirements. |
 
 ### 2. Protocol Latency Distributions (PQC Impact by Protocol)
 
-|                                                           Modbus TCP                                                            |                                                       Siemens S7comm                                                        |                                                          OPC UA                                                           |
-| :-----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
-| <a href="graphs/1_latency_boxplot_modbus.png"><img src="graphs/1_latency_boxplot_modbus.png" width="100%" alt="Modbus TCP"></a> | <a href="graphs/1_latency_boxplot_s7.png"><img src="graphs/1_latency_boxplot_s7.png" width="100%" alt="Siemens S7comm"></a> | <a href="graphs/1_latency_boxplot_opcua.png"><img src="graphs/1_latency_boxplot_opcua.png" width="100%" alt="OPC UA"></a> |
+|                                                           Modbus TCP                                                           |                                                       Siemens S7comm                                                       |                                                          OPC UA                                                          |
+| :----------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
+| <a href="graphs/1_latency_boxplot_modbus.png"><img src="graphs/1_latency_boxplot_modbus.png" width="600" alt="Modbus TCP"></a> | <a href="graphs/1_latency_boxplot_s7.png"><img src="graphs/1_latency_boxplot_s7.png" width="600" alt="Siemens S7comm"></a> | <a href="graphs/1_latency_boxplot_opcua.png"><img src="graphs/1_latency_boxplot_opcua.png" width="600" alt="OPC UA"></a> |
 
 - **Authentic Protocol Hierarchy:** By comparing the spread of the boxplots across the three protocols, fundamental architectural differences are revealed. **S7comm** (~1.1ms; highly efficient C++ ISO-on-TCP) maintains the tightest clustering and lowest overall latency. **Modbus TCP** (~1.8ms) suffers slightly higher variance due to OS-level kernel interrupts caused by tiny payloads, while **OPC UA** (~2.7ms) exhibits the highest baseline overhead due to complex user-space binary node parsing.
 
 ### 3. Cryptographic Overhead by Hardware Profile
 
-|                                                    1% CPU Limit (Micro RTU)                                                    |                                                   10% CPU Limit (Legacy RTU)                                                   |
-| :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-|    <a href="graphs/3_protocol_overhead_micro_rtu.png"><img src="graphs/3_protocol_overhead_micro_rtu.png" width="100%"></a>    |   <a href="graphs/3_protocol_overhead_legacy_rtu.png"><img src="graphs/3_protocol_overhead_legacy_rtu.png" width="100%"></a>   |
-|                                                **50% CPU Limit (Mid-Tier PLC)**                                                |                                               **150% CPU Limit (High-End PLC)**                                                |
-| <a href="graphs/3_protocol_overhead_mid_tier_plc.png"><img src="graphs/3_protocol_overhead_mid_tier_plc.png" width="100%"></a> | <a href="graphs/3_protocol_overhead_high_end_plc.png"><img src="graphs/3_protocol_overhead_high_end_plc.png" width="100%"></a> |
+|                                                   1% CPU Limit (Micro RTU)                                                    |                                                  10% CPU Limit (Legacy RTU)                                                   |
+| :---------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: |
+|    <a href="graphs/3_protocol_overhead_micro_rtu.png"><img src="graphs/3_protocol_overhead_micro_rtu.png" width="600"></a>    |   <a href="graphs/3_protocol_overhead_legacy_rtu.png"><img src="graphs/3_protocol_overhead_legacy_rtu.png" width="600"></a>   |
+|                                               **50% CPU Limit (Mid-Tier PLC)**                                                |                                               **150% CPU Limit (High-End PLC)**                                               |
+| <a href="graphs/3_protocol_overhead_mid_tier_plc.png"><img src="graphs/3_protocol_overhead_mid_tier_plc.png" width="600"></a> | <a href="graphs/3_protocol_overhead_high_end_plc.png"><img src="graphs/3_protocol_overhead_high_end_plc.png" width="600"></a> |
 
 - **Zero Steady-State Impact:** These grids visually map the overhead of NIST algorithms against the classical baseline. Notice the drastic shift between the Micro RTU and the others: because PQC relies on asymmetric handshakes, the heavy mathematical lifting occurs _exclusively_ during VPN initialization. Once established, steady-state symmetric polling (AES-GCM) under NIST Level 5 is statistically identical to Classical RSA on any hardware above the 10% limit.
 
 ### 4. Absolute DoS Resilience
 
-<p align="center">
-  <a href="graphs/2_hardware_success_rate.png"><img src="graphs/2_hardware_success_rate.png" width="49%" alt="Hardware Success Rate"></a>
-  <a href="graphs/2_success_rate_heatmap.png"><img src="graphs/2_success_rate_heatmap.png" width="49%" alt="Success Heatmap"></a>
-</p>
-
-- **100% DoS Resilience:** Despite the massive packet fragmentation introduced by Level 5 Post-Quantum signatures (like ML-DSA-87, which vastly exceeds standard Ethernet MTU sizes), the connection success rate never faltered. By enforcing strict TPKT/MBAP Application-Layer parsing and bypassing Nagle's Algorithm in the custom HMI, QUOTAS demonstrates that Cryptographic Denial-of-Service is primarily a software parsing failure, not an inherent hardware limitation, achieving a **100% success rate** across all profiles.
+| Hardware Success Rate                                                                                                                                                                                                           | Algorithm Success Heatmap                                                                                                                                                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <a href="graphs/2_hardware_success_rate.png"><img src="graphs/2_hardware_success_rate.png" width="600" alt="Hardware Success Rate"></a>                                                                                         | <a href="graphs/2_success_rate_heatmap.png"><img src="graphs/2_success_rate_heatmap.png" width="500" alt="Success Heatmap"></a>                                                                                                                   |
+| **100% DoS Resilience:** Despite the massive packet fragmentation introduced by Level 5 Post-Quantum signatures (like ML-DSA-87, which vastly exceeds standard Ethernet MTU sizes), the connection success rate never faltered. | By enforcing strict TPKT/MBAP Application-Layer parsing and bypassing Nagle's Algorithm in the custom HMI, QUOTAS demonstrates that Cryptographic Denial-of-Service is primarily a software parsing failure, not an inherent hardware limitation. |
 
 ---
 
@@ -179,18 +192,19 @@ QUOTAS/
 ├── index.html                  # Interactive SPA Architecture Dashboard
 ├── data.js                     # 72k benchmark dataset wrapper for live dashboard
 ├── hmi/                        # Custom HMI
-|   └── hmi_multi_client.py     # Custom Python HMI telemetry multi-client
+│   └── hmi_multi_client.py     # Custom Python HMI telemetry multi-client
 ├── config/                     # OpenVPN configuration files
-│   |── openvpn-client.conf     # Client-side tunnel configuration
+│   ├── openvpn-client.conf     # Client-side tunnel configuration
 │   └── openvpn-server.conf     # Server-side tunnel configuration
 ├── scripts/                    # Helper scripts
 │   └── gen_certs.sh            # OQS Certificate Generator
-|-- certs/                      # Folder to store certificates which are to be generated by gen_certs.sh
+├── certs/                      # Folder to store certificates which are to be generated by gen_certs.sh
 ├── logs/                       # Directory containing execution_log.txt
-|   └── execution_log.txt       # Actual execution_log.txt
-|-- nist_pqc_ot_benchmarks.csv  # Actual CSV generated by running the testbed
+│   └── execution_log.txt       # Actual execution_log.txt
+├── nist_pqc_ot_benchmarks.csv  # Actual CSV generated by running the testbed
 ├── golden-plc-backup.tar.gz    # Golden state backup for the OpenPLC runtime
 └── graphs/                     # Directory containing visualizations and the ladder logic used in golden-plc
+
 ```
 
 ---
@@ -205,7 +219,7 @@ QUOTAS/
 First, clone the repository and configure your Python virtual environment using the provided `requirements.txt`:
 
 ```bash
-git clone https://github.com/PSaiSurya/Quotas.git
+git clone [https://github.com/PSaiSurya/Quotas.git](https://github.com/PSaiSurya/Quotas.git)
 cd quotas
 
 # Create and activate a Python virtual environment
