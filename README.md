@@ -133,33 +133,26 @@ _(Click on any graph to expand to full resolution)._
 
 ### 1. The Cryptographic Starvation Boundary & Predictability
 
-<p align="center">
-  <a href="graphs/4_cpu_scaling_boundary.png"><img src="graphs/4_cpu_scaling_boundary.png" width="49%" alt="Cryptographic Starvation Boundary"></a>
-  <a href="graphs/5_tail_latency_ecdf.png"><img src="graphs/5_tail_latency_ecdf.png" width="49%" alt="Tail Latency Predictability"></a>
-</p>
-
-- **The Starvation Boundary:** Plotting latency against available hardware power reveals a severe "Hockey Stick" curve. At **1% CPU (Micro RTUs)**, Linux CFS context-switching induces erratic starvation jitter (>80ms). However, scaling hardware to just **10% CPU (Legacy RTUs)** flattens the curve, providing enough headroom for a perfectly deterministic ~2ms baseline.
-- **Tail Latency Predictability:** The ECDF graph (right) answers the critical industrial question: _"What is the absolute maximum delay an actuator will experience 99% of the time?"_ Once the 10% CPU starvation boundary is cleared, packet delivery under PQC remains tightly clustered, satisfying strict ICS determinism requirements.
+| The Starvation Boundary                                                                                                                                                                                                                                                                                                                        | Tail Latency Predictability                                                                                                                                                                                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <a href="graphs/4_cpu_scaling_boundary.png"><img src="graphs/4_cpu_scaling_boundary.png" width="100%" alt="Cryptographic Starvation Boundary"></a>                                                                                                                                                                                             | <a href="graphs/5_tail_latency_ecdf.png"><img src="graphs/5_tail_latency_ecdf.png" width="100%" alt="Tail Latency Predictability"></a>                                                                                                                                                         |
+| **Plotting latency against available hardware power reveals a severe "Hockey Stick" curve.** At 1% CPU (Micro RTUs), Linux CFS context-switching induces erratic starvation jitter (>80ms). However, scaling hardware to just 10% CPU (Legacy RTUs) flattens the curve, providing enough headroom for a perfectly deterministic ~2ms baseline. | **The ECDF answers the critical industrial question: "What is the absolute maximum delay an actuator will experience 99% of the time?"** Once the 10% CPU starvation boundary is cleared, packet delivery under PQC remains tightly clustered, satisfying strict ICS determinism requirements. |
 
 ### 2. Protocol Latency Distributions (PQC Impact by Protocol)
 
-<p align="center">
-  <a href="graphs/1_latency_boxplot_modbus.png"><img src="graphs/1_latency_boxplot_modbus.png" width="32%" alt="Modbus TCP"></a>
-  <a href="graphs/1_latency_boxplot_s7.png"><img src="graphs/1_latency_boxplot_s7.png" width="32%" alt="Siemens S7comm"></a>
-  <a href="graphs/1_latency_boxplot_opcua.png"><img src="graphs/1_latency_boxplot_opcua.png" width="32%" alt="OPC UA"></a>
-</p>
+|                                                           Modbus TCP                                                            |                                                       Siemens S7comm                                                        |                                                          OPC UA                                                           |
+| :-----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
+| <a href="graphs/1_latency_boxplot_modbus.png"><img src="graphs/1_latency_boxplot_modbus.png" width="100%" alt="Modbus TCP"></a> | <a href="graphs/1_latency_boxplot_s7.png"><img src="graphs/1_latency_boxplot_s7.png" width="100%" alt="Siemens S7comm"></a> | <a href="graphs/1_latency_boxplot_opcua.png"><img src="graphs/1_latency_boxplot_opcua.png" width="100%" alt="OPC UA"></a> |
 
 - **Authentic Protocol Hierarchy:** By comparing the spread of the boxplots across the three protocols, fundamental architectural differences are revealed. **S7comm** (~1.1ms; highly efficient C++ ISO-on-TCP) maintains the tightest clustering and lowest overall latency. **Modbus TCP** (~1.8ms) suffers slightly higher variance due to OS-level kernel interrupts caused by tiny payloads, while **OPC UA** (~2.7ms) exhibits the highest baseline overhead due to complex user-space binary node parsing.
 
 ### 3. Cryptographic Overhead by Hardware Profile
 
-<p align="center">
-  <a href="graphs/3_protocol_overhead_micro_rtu.png"><img src="graphs/3_protocol_overhead_micro_rtu.png" width="49%" alt="Micro RTU Overhead"></a>
-  <a href="graphs/3_protocol_overhead_legacy_rtu.png"><img src="graphs/3_protocol_overhead_legacy_rtu.png" width="49%" alt="Legacy RTU Overhead"></a>
-  <br>
-  <a href="graphs/3_protocol_overhead_mid_tier_plc.png"><img src="graphs/3_protocol_overhead_mid_tier_plc.png" width="49%" alt="Mid-Tier PLC Overhead"></a>
-  <a href="graphs/3_protocol_overhead_high_end_plc.png"><img src="graphs/3_protocol_overhead_high_end_plc.png" width="49%" alt="High-End PLC Overhead"></a>
-</p>
+|                                                    1% CPU Limit (Micro RTU)                                                    |                                                   10% CPU Limit (Legacy RTU)                                                   |
+| :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+|    <a href="graphs/3_protocol_overhead_micro_rtu.png"><img src="graphs/3_protocol_overhead_micro_rtu.png" width="100%"></a>    |   <a href="graphs/3_protocol_overhead_legacy_rtu.png"><img src="graphs/3_protocol_overhead_legacy_rtu.png" width="100%"></a>   |
+|                                                **50% CPU Limit (Mid-Tier PLC)**                                                |                                               **150% CPU Limit (High-End PLC)**                                                |
+| <a href="graphs/3_protocol_overhead_mid_tier_plc.png"><img src="graphs/3_protocol_overhead_mid_tier_plc.png" width="100%"></a> | <a href="graphs/3_protocol_overhead_high_end_plc.png"><img src="graphs/3_protocol_overhead_high_end_plc.png" width="100%"></a> |
 
 - **Zero Steady-State Impact:** These grids visually map the overhead of NIST algorithms against the classical baseline. Notice the drastic shift between the Micro RTU and the others: because PQC relies on asymmetric handshakes, the heavy mathematical lifting occurs _exclusively_ during VPN initialization. Once established, steady-state symmetric polling (AES-GCM) under NIST Level 5 is statistically identical to Classical RSA on any hardware above the 10% limit.
 
