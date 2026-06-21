@@ -219,8 +219,8 @@ QUOTAS/
 First, clone the repository and configure your Python virtual environment using the provided `requirements.txt`:
 
 ```bash
-git clone [https://github.com/PSaiSurya/Quotas.git](https://github.com/PSaiSurya/Quotas.git)
-cd quotas
+git clone https://github.com/PSaiSurya/QUOTAS.git
+cd QUOTAS
 
 # Create and activate a Python virtual environment
 python3 -m venv Quotas
