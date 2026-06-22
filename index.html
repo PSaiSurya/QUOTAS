@@ -475,6 +475,14 @@
         <p>Evaluate post-quantum cryptographic suites across a full Purdue architecture model under constrained
             edge-hardware conditions. Observe end-to-end telemetry traversal and measure jitter impact on deterministic
             control loops.</p>
+
+        <div
+            style="margin-top: 16px; font-size: 11.5px; color: var(--t2); background: var(--surface-2); border: 1px solid var(--border); padding: 10px 16px; border-radius: 8px; display: inline-block; text-align: left; line-height: 1.5;">
+            <span style="color: var(--teal); font-weight: 700;">ⓘ Topology Note:</span> The 5-layer Purdue model is
+            shown for architectural context. Nodes with dashed borders are passive structural representations. The
+            animated telemetry traces the precise 4-node Docker benchmark harness (HMI ➔ Corp VPN ➔ Plant VPN ➔ Golden
+            PLC).
+        </div>
     </div>
 
     <div class="controls">
@@ -482,14 +490,14 @@
             <label>Industrial Protocol</label>
             <select id="sel-protocol">
                 <option value="S7comm">Siemens S7comm (ISO-on-TCP · Port 102)</option>
-                <option value="Modbus TCP">Modbus TCP (Port 502)</option>
+                <option value="Modbus TCP" selected>Modbus TCP (Port 502)</option>
                 <option value="OPC UA">OPC UA Binary (Port 4840)</option>
             </select>
         </div>
         <div class="cg">
             <label>Cryptographic Suite</label>
             <select id="sel-crypto" onchange="updateLabel()">
-                <option value="CLASSICAL">Classical — RSA-3072 / X25519</option>
+                <option value="CLASSICAL" selected>Classical — RSA-3072 / X25519</option>
                 <option value="LVL1_ML">NIST LVL 1 — ML-DSA-44 / ML-KEM-512</option>
                 <option value="LVL3_ML">NIST LVL 3 — ML-DSA-65 / ML-KEM-768</option>
                 <option value="LVL5_ML">NIST LVL 5 — ML-DSA-87 / ML-KEM-1024</option>
@@ -500,8 +508,8 @@
         <div class="cg">
             <label>Plant Hardware Constraint</label>
             <select id="sel-hw">
-                <option value="micro">Micro RTU — 0.01× CPU budget</option>
-                <option value="legacy" selected>Legacy RTU — 0.1× CPU budget</option>
+                <option value="micro" selected>Micro RTU — 0.01× CPU budget</option>
+                <option value="legacy">Legacy RTU — 0.1× CPU budget</option>
                 <option value="mid">Mid-Tier PLC — 0.5× CPU budget</option>
                 <option value="high">High-End PLC — 1.5× CPU budget</option>
             </select>
