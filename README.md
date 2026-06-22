@@ -44,7 +44,7 @@ As the world migrates to NIST-standardized Post-Quantum Cryptography (FIPS 203, 
 
 In real-world Operational Technology (OT) environments, legacy PLCs and RTUs fundamentally lack the CPU power, memory, and software support to natively execute heavy cryptographic stacks. Upgrading every physical controller in a manufacturing plant is financially impossible.
 
-Instead, the industry standard is to use "bump-in-the-wire" **VPN Gateways or DMZ Firewalls** to encapsulate raw industrial traffic over untrusted networks. In our architecture, the **Corporate VPN Gateway** and **Plant VPN Gateway** act as cryptographic proxies. Therefore, testing how a heavily constrained edge gateway handles Post-Quantum encryption directly answers the critical question: _Will the cryptographic overhead of the gateway starve the physical control loop of the PLC behind it?_
+Instead, the industry standard is to use "bump-in-the-wire" **VPN Gateways or DMZ Firewalls** to encapsulate raw industrial traffic over untrusted networks. In our architecture, the **Corporate VPN Gateway** and **Plant VPN Gateway** act as cryptographic proxies. Therefore, testing this proxy architecture within a heavily constrained edge environment answers the critical question: _Will the massive compute tax of the gateway's Post-Quantum cryptography starve the legacy PLC sharing the cabinet's limited resources?_
 
 ---
 
@@ -56,7 +56,9 @@ The framework programmatically iterates through a strict test matrix to discover
 
 ### Hardware Constraints (Linux CFS CPU Profiles)
 
-To simulate aging ICS infrastructure, Docker hypervisor limits artificially choke the Plant VPN Gateway's compute capabilities. These limits are configured as percentages of a single core of an Intel® Core™ i9-14900K.
+To accurately simulate an aging, low-power ICS cabinet, the dynamic Docker hypervisor limits artificially choke the **entire Plant Edge environment**. The CPU limit is applied simultaneously to **BOTH** the Plant VPN Gateway (which executes the heavy Post-Quantum lattice mathematics) and the Golden PLC (which parses the incoming industrial protocols). 
+
+By starving the entire plant edge as a single cohesive unit, we can measure how the cryptographic overhead of the gateway compounds with the protocol parsing overhead of the legacy PLC. These limits are configured as percentages of a single core of an Intel® Core™ i9-14900K.
 
 _(**Note:** Due to Docker Desktop and Windows Subsystem for Linux (WSL) abstraction layers, strict hardware-level isolation targeting specific Performance (P-cores) or Efficient (E-cores) cannot be strictly guaranteed or verified)._
 
@@ -223,8 +225,8 @@ git clone https://github.com/PSaiSurya/QUOTAS.git
 cd QUOTAS
 
 # Create and activate a Python virtual environment
-python3 -m venv Quotas
-source Quotas/bin/activate
+python3 -m venv quotas_env
+source quotas_env/bin/activate
 
 # Install all necessary python libraries
 pip install -r requirements.txt
