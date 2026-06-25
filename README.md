@@ -24,7 +24,7 @@
 
 ## 🌐 Live Interactive Dashboard
 
-To accurately visualize the routing, encapsulation, and real-time physics of this testbed, we have deployed an interactive Single-Page Application (SPA) dashboard, proudly made by Claude.
+To accurately visualize the routing, encapsulation, and real-time physics of this testbed, we have deployed an interactive Single-Page Application (SPA) dashboard.
 
 🚀 **[View the Live QUOTAS Dashboard Here](https://psaisurya.github.io/QUOTAS/)**
 
