@@ -949,7 +949,7 @@
             }
 
             const isPQC = rawCrypto !== 'CLASSICAL';
-            const isHeavy = rawCrypto.includes('LVL5') || rawCrypto.includes('FALCON');
+            const isHeavy = rawCrypto.includes('LVL5');
             const isStarved = rawHw === 'micro';
             const isLegacy = rawHw === 'legacy';
 
@@ -974,15 +974,11 @@
             movePkt('corpvpn', '#8b5cf6');
             await wait(660);
 
-            log('WAN', 'ltag-wan', `Lattice KEM complete. Payload encapsulated in quantum tunnel.`);
+            log('WAN', 'ltag-wan', `AES-256-GCM steady-state encapsulation active. Forwarding payload through established quantum-safe tunnel.`);
             movePkt('plantvpn', '#8b5cf6');
             await wait(660);
 
-            log('OT', 'ltag-ot', `Decapsulating at Plant GW. Forwarding to OT segment...`);
-            movePkt('historian', '#14b8a6');
-            await wait(500);
-
-            log('OT', 'ltag-ot', `Historian relay logged. Routing to Golden PLC register bank...`);
+            log('OT', 'ltag-ot', `Decapsulating at Plant GW. Forwarding directly to PLC on OT segment...`);
             movePkt('plc', '#10b981');
             await wait(500);
 
@@ -995,7 +991,7 @@
                 log('PLC', 'ltag-warn', `PLC processed with SEVERE jitter. Control loop integrity at risk.`);
                 setM('m-rtt', rtt, 'bad'); setM('m-jit', `>${jitter}`, 'bad'); setM('m-kem', overhead, 'bad');
             } else if ((isStarved || isLegacy) && isHeavy) {
-                log('PLC', 'ltag-warn', `WARN: Hardware constraint causing buffer delays on KEM operations.`);
+                log('PLC', 'ltag-warn', `WARN: Hardware constraint causing AES-GCM encapsulation buffer delays.`);
                 await wait(1500);
                 log('PLC', 'ltag-warn', `PLC processed with moderate jitter (~${jitter}ms). Monitor closely.`);
                 setM('m-rtt', rtt, 'warn'); setM('m-jit', `~${jitter}`, 'warn'); setM('m-kem', overhead, 'warn');
@@ -1010,10 +1006,7 @@
             }
 
             // ── RETURN PATH ──
-            log('OT', 'ltag-ot', `Marshaling binary register response → Historian → Plant GW...`);
-            movePkt('historian', '#14b8a6');
-            await wait(500);
-
+            log('OT', 'ltag-ot', `Marshaling binary register response → Plant GW...`);
             movePkt('plantvpn', '#8b5cf6');
             await wait(520);
 
