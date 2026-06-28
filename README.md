@@ -194,7 +194,9 @@ Welch's two-sample t-tests were computed against the empirical CSV (`nist_pqc_ot
 | NIST Level 1 (FALCON-512 / ML-KEM-512) | 30 | 2.103 ± 0.700 | −1.43 (57.6) | 0.158 | 0.37 |
 | NIST Level 5 (FALCON-1024 / ML-KEM-1024) | 30 | 2.050 ± 0.694 | −1.13 (57.7) | 0.265 | 0.29 |
 
-> At the 10% CPU tier (Legacy RTU), all five comparisons similarly yield p > 0.19. At 50% CPU (Mid-Tier PLC), Level 3–5 suites produce marginal statistical significance (p = 0.014–0.021); mean deltas remain below 0.51 ms. These results are reproducible by running `python3 visualize.py` against the provided CSV.
+> At the 10% CPU tier (Legacy RTU), all five comparisons similarly yield p > 0.19. At 50% CPU (Mid-Tier PLC), Level 3–5 suites produce marginal statistical significance (p = 0.014–0.021); mean deltas remain below 0.51 ms.
+>
+> These statistics are verifiable by running standard Welch's two-sample t-tests directly against the provided empirical dataset (`nist_pqc_ot_benchmarks.csv`).
 
 ---
 
