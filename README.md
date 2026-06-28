@@ -235,7 +235,10 @@ QUOTAS/
 
 **Prerequisites:** Docker Engine, Python 3.11+, and standard Unix network utilities (`iproute2`, `iptables`).
 
-> 🪟 **Windows Users (WSL 2 requirement):** Because this testbed strictly relies on Linux kernel constraints (CFS) and Unix networking to execute the throttling, Windows users **must** execute this within a **WSL-Ubuntu** environment. Ensure Docker Desktop is installed, configured to use the WSL 2 backend, and that **WSL Integration is explicitly enabled for your specific Ubuntu distro** (found under Docker Desktop > Settings > Resources > WSL Integration).
+> 🪟 **Windows Users (WSL 2 requirement):**
+>
+> Because this testbed strictly relies on Linux kernel constraints (CFS) and Unix networking to execute the throttling, Windows users **must** execute this within a **WSL-Ubuntu** environment.
+> Ensure Docker Desktop is installed, configured to use the WSL 2 backend, and that **WSL Integration is explicitly enabled for your specific Ubuntu distro** (found under Docker Desktop > Settings > Resources > WSL Integration).
 
 **1. Clone the Repository, Fetch LFS Objects & Install Dependencies**
 <br>
@@ -288,7 +291,8 @@ docker images | grep golden-plc
 
 **4. Execute the Matrix**
 
-_Methodology Note:_ To ensure absolute precision and avoid state contamination, the orchestration script cleanly tears down and fully reinstantiates the entire Docker infrastructure whenever a hardware profile or cipher suite changes. The environment boots unconstrained so the PQC handshake can complete normally. The dynamic Linux CFS CPU throttle (e.g., 0.1 CPU) is applied _only after_ the infrastructure is fully booted and the tunnel is established. This strictly isolates and measures the steady-state overhead.
+> _Methodology Note:_
+> To ensure absolute precision and avoid state contamination, the orchestration script cleanly tears down and fully reinstantiates the entire Docker infrastructure whenever a hardware profile or cipher suite changes. The environment boots unconstrained so the PQC handshake can complete normally. The dynamic Linux CFS CPU throttle (e.g., 0.1 CPU) is applied _only after_ the infrastructure is fully booted and the tunnel is established. This strictly isolates and measures the steady-state overhead.
 
 ```bash
 rm -f nist_pqc_ot_benchmarks.csv
