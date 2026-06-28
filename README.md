@@ -215,7 +215,7 @@ QUOTAS/
 │   └── hmi_multi_client.py     # Custom Python HMI telemetry multi-client
 ├── config/                     # OpenVPN configuration files
 │   ├── openvpn-client.conf     # Client-side tunnel configuration
-│   └── openvpn-server.conf     # Server-side tunnel configuration
+│   ├── openvpn-server.conf     # Server-side tunnel configuration
 │   ├── openvpn-client.tmpl     # Client-side tunnel sanitized template
 │   └── openvpn-server.tmpl     # Server-side tunnel sanitized template
 ├── scripts/                    # Helper scripts
