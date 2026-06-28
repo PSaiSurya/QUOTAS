@@ -236,6 +236,7 @@ QUOTAS/
 > 🪟 **Windows Users (WSL 2 requirement):** Because this testbed strictly relies on Linux kernel constraints (CFS) and Unix networking to execute the throttling, Windows users **must** execute this within a **WSL-Ubuntu** environment. Ensure Docker Desktop is installed and configured to use the WSL 2 backend.
 
 **1. Clone the Repository & Install Dependencies**
+<br>
 First, clone the repository and configure your Python virtual environment using the provided `requirements.txt`:
 
 ```bash
@@ -251,6 +252,7 @@ pip install -r requirements.txt
 ```
 
 **2. Generate Certificates & Compile the Environment**
+<br>
 Before compiling the Docker images, you must generate the Open Quantum Safe (OQS) certificates required by the VPN gateways. Once generated, run the setup script to construct the infrastructure:
 
 ```bash
@@ -264,6 +266,7 @@ chmod +x setup.sh
 ```
 
 **3. Restore the Golden PLC Environment**
+<br>
 To ensure the testbed executes correctly, the OpenPLC runtime requires exact database mapping for Modbus and S7comm. You must restore the pre-configured environment directly from the provided backup archive before running the benchmark:
 
 ```bash
