@@ -85,13 +85,13 @@ def generate_charts():
         if hw_data.empty: continue 
             
         plt.figure(figsize=(12, 6))
-        # errorbar='sd' adds the Standard Deviation lines, representing network Jitter
+        # errorbar='sd' shows ±1 standard deviation around the mean latency
         sns.barplot(
             data=hw_data, x="Protocol", y="Avg_Latency_ms", hue="Cipher_Suite", 
             palette="mako", errorbar='sd', capsize=0.1, err_kws={'linewidth': 1.5}
         )
-        plt.title(f"Protocol Overhead & Jitter under PQC ({hw.upper()})", pad=15, fontweight='bold', fontsize=14)
-        plt.ylabel("Average Latency (ms) + StdDev Jitter", fontsize=12)
+        plt.title(f"Protocol Overhead under PQC ({hw.upper()})", pad=15, fontweight='bold', fontsize=14)
+        plt.ylabel("Mean Steady-State Latency (ms), error bars = ±1 SD", fontsize=12)
         plt.xlabel("Industrial Protocol", fontsize=12)
         plt.legend(title="Cipher Suite", bbox_to_anchor=(1.01, 1), loc='upper left')
         plt.tight_layout()
