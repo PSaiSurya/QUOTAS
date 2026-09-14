@@ -473,7 +473,7 @@
         <div class="hdr-eyebrow">NIST PQC · ICS Security Research</div>
         <h1>QUOTAS Framework (QUantum-safe OT Assessment Sandbox)</h1>
         <p>Evaluate post-quantum cryptographic suites across a full Purdue architecture model under constrained
-            edge-hardware conditions. Observe end-to-end telemetry traversal and measure jitter impact on deterministic
+            edge-hardware conditions. Observe end-to-end telemetry traversal and measure latency variance impact on deterministic
             control loops.</p>
 
         <div
@@ -720,7 +720,7 @@
                     <div class="m-unit">milliseconds</div>
                 </div>
                 <div class="m-item">
-                    <div class="m-lbl">PLC Jitter</div>
+                    <div class="m-lbl">Latency</div>
                     <div class="m-val" id="m-jit">—</div>
                     <div class="m-unit">ms std-dev</div>
                 </div>
@@ -986,14 +986,14 @@
             if (isStarved && isHeavy) {
                 log('PLC', 'ltag-warn', `WARN: 1% CPU budget exceeded during lattice decryption operation.`);
                 log('PLC', 'ltag-crit', `CRIT: Linux CFS starvation — context-switch queue building rapidly.`);
-                log('PLC', 'ltag-crit', `CRIT: Deterministic scan cycle compromised. Jitter evaluated at ${jitter}ms.`);
+                log('PLC', 'ltag-crit', `CRIT: Deterministic scan cycle compromised. Latency fluctuations evaluated at ±${jitter}ms.`);
                 await wait(2600);
-                log('PLC', 'ltag-warn', `PLC processed with SEVERE jitter. Control loop integrity at risk.`);
+                log('PLC', 'ltag-warn', `PLC processed with SEVERE latency spikes. Control loop integrity at risk.`);
                 setM('m-rtt', rtt, 'bad'); setM('m-jit', `>${jitter}`, 'bad'); setM('m-kem', overhead, 'bad');
             } else if ((isStarved || isLegacy) && isHeavy) {
                 log('PLC', 'ltag-warn', `WARN: Hardware constraint causing AES-GCM encapsulation buffer delays.`);
                 await wait(1500);
-                log('PLC', 'ltag-warn', `PLC processed with moderate jitter (~${jitter}ms). Monitor closely.`);
+                log('PLC', 'ltag-warn', `PLC exhibited moderate latency fluctuations (~±${jitter}ms). Monitor closely.`);
                 setM('m-rtt', rtt, 'warn'); setM('m-jit', `~${jitter}`, 'warn'); setM('m-kem', overhead, 'warn');
             } else if (isPQC) {
                 await wait(820);
